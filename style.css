@@ -11,7 +11,7 @@
     height: 123vh;
     margin: 0;
     padding: 0;
-    background: url(bg.jpeg) no-repeat center center;
+    background: url(/bg.jpeg) no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
