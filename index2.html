@@ -66,6 +66,27 @@
     updateCountdown();
     const countdownInterval = setInterval(updateCountdown, 1000);
   </script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+  
+    // Disable Ctrl+U (View Source)
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+      }
+    });
+  
+    // Disable F12 and Developer Tools
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+      }
+    });
+  
+  
+  
+  </script>
 </body>
 
 
